@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_search_linerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#546ef2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/search_back_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="返回"
+            android:background="#546ef2"
+            android:onClick="onBackToMain" />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:hint="搜索歌名"
+            android:lines="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_search_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+       <ListView
+           android:id="@+id/search_listview"
+           android:layout_width="match_parent"
+       	   android:layout_height="match_parent"
+       	  >
+       </ListView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_framelaout_playitem"
+            android:layout_alignParentBottom="true"/>
+       
+    </RelativeLayout>
+
+</LinearLayout>

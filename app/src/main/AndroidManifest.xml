@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="myapplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/btn_pause"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="mymusicplayer.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="search.SearchMusic"
+            android:theme="@style/AppTheme.MainBar"></activity>
+        <activity android:name="mymusicplayer.RankSongsActivity"
+
+            android:theme="@style/AppTheme.MainBar"></activity>
+        <activity android:name="mymusicplayer.LoginActivity"
+            android:theme="@style/AppTheme.MainBar"></activity>
+        <activity android:name="mymusicplayer.LocalMusicActivity"
+            android:theme="@style/AppTheme.MainBar"></activity>
+        <activity android:name="mymusicplayer.PlayActivity"
+            android:launchMode="singleTask"></activity>
+        <activity android:name="mymusicplayer.RecommentActivity"
+            android:theme="@style/AppTheme.MainBar"></activity>
+        <activity android:name="mymusicplayer.DownloadActivity"></activity>
+        <service
+            android:name="service.PlayMusicService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service android:name="service.DownloadService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <activity android:name="mymusicplayer.MvPlayActivity"
+            android:hardwareAccelerated="true"></activity>
+    </application>
+
+</manifest>

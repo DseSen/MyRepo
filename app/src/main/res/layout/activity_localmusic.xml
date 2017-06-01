@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <android.support.v7.widget.Toolbar
+
+        android:background="#546ef2"
+        android:id="@+id/activity_localmusic_toolbar"
+        android:theme="@style/AppTheme.ToolBar"
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="48dp">
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_below="@id/activity_localmusic_toolbar"
+        android:id="@+id/activity_localmusic_nav"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#FFF">
+        <RadioGroup
+            android:id="@+id/activity_localmusic_rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/activity_localmusic_rb_all"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/activity_localmusic_rb_singer"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="歌手"
+                android:layout_height="match_parent" />
+
+            <RadioButton
+                android:id="@+id/activity_localmusic_rb_album"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="专辑"
+                android:layout_height="match_parent" />
+            <RadioButton
+                android:id="@+id/activity_localmusic_rb_folder"
+                android:gravity="center"
+                android:button="@null"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="文件夹"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+        <RelativeLayout
+            android:id="@+id/activity_localmusic_nav_progress"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="5px">
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_below="@id/activity_localmusic_nav"
+        android:id="@+id/activity_localmusic_viewpager"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/localmusic_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ></FrameLayout>
+</RelativeLayout>

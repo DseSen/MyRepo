@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/playmusicitemfragment_linerlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal" >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/playmusicitem_viewpager"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:focusable="false"
+        />
+
+    <ImageView
+        android:id="@+id/palyitem_btn_play"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/playitemclick"
+        android:src="@drawable/btn_play"
+        />
+    <ImageView
+        android:id="@+id/palyitem_btn_list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/bt_minibar_playinglist_normal"
+        android:background="@drawable/playitemclick"
+         />
+
+</LinearLayout>

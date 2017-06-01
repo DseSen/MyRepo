@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/playmusicitem_viewpager_slide_image"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/playmusicitem_viewpager_slide_text1"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:text="歌名" />
+        <TextView
+            android:id="@+id/playmusicitem_viewpager_slide_text2"
+            android:layout_width="match_parent"
+            android:layout_height="13dp"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:text="作者"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#546ef2</color>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorClick">#FFF</color>
+    <color name="colorUnClick">#a6a9ff</color>
+    <color name="colorUnClick2">#000</color>
+    <color name="listLineColor">#e5e5e5</color>
+    <color name="billcolor">#4a4a4a</color>
+    <color name="hotrankcolor">#e65203</color>
+    <color name="chizha">#fea602</color>
+    <color name="haotongxing">#4ec0ec</color>
+    <color name="huayu">#8f1936</color>
+    <color name="king">#f89ebc</color>
+    <color name="laoge">#cc9712</color>
+    <color name="xinge">#279702</color>
+    <color name="oumei">#3032a3</color>
+    <color name="qingge">#c72676</color>
+    <color name="wangluo">#1177d5</color>
+    <color name="yaogun">#8b1a0f</color>
+    <color name="yingshi">#9d6f3b</color>
+    <color name="yuanchuang">#b90f72</color>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+<ImageView
+    android:id="@+id/sideslip_listview_item_set_image"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:layout_marginLeft="15dp"/>
+    <TextView
+        android:id="@+id/sideslip_listview_item_set_text"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:text="条目内容"/>
+</LinearLayout>

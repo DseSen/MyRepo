@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/activity_download_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+</android.support.v7.widget.Toolbar>
+    <RadioGroup
+        android:id="@+id/activity_download_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/activity_download_downloaded"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="已下载"
+            android:gravity="center"
+            android:button="@null"/>
+        <RadioButton
+            android:id="@+id/activity_download_downloading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="正在下载"
+            android:gravity="center"
+            android:button="@null"/>
+    </RadioGroup>
+    <RelativeLayout
+        android:id="@+id/activity_download_nav"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_download_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/download_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
